@@ -8,8 +8,8 @@ import Link from "next/link"
 const sampleProjects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce platform built with Next.js, MongoDB, and Stripe integration.",
+    title: "Style Sync Ai", 
+    description: "A full-stack Style Sync Ai platform built with Next.js, MongoDB, and Stripe integration.",
     image: "/stylesync.png?height=300&width=500",
     tags: ["Next.js", "MongoDB", "Stripe", "Tailwind CSS"],
     githubUrl: "https://github.com/Thenakan",
