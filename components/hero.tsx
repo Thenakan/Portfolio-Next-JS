@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 import TypedText from "./typed" // TypedText component import
 import { FaWhatsapp } from 'react-icons/fa';
 
-
 const Hero = () => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about")
@@ -35,10 +34,10 @@ const Hero = () => {
             I build modern web applications with Next.js, React, TypeScript, and more. Let's create something amazing together!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Button asChild className="bg-primary hover:bg-primary/90">
+            <Button asChild className="bg-primary hover:bg-primary/90 transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
               <Link href="#contact">Get in Touch</Link>
             </Button>
-            <Button asChild variant="outline">
+            <Button asChild variant="outline" className="transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
               <Link
                 href="https://drive.google.com/file/d/1-K2DHBEMZYYxY2BBXQqfk5IcfEr_7pej/view?usp=drive_link"
                 target="_blank"
@@ -49,12 +48,12 @@ const Hero = () => {
             </Button>
           </div>
           <div className="flex gap-4 mt-8 justify-center md:justify-start">
-            <Button asChild variant="ghost" size="icon">
+            <Button asChild variant="ghost" size="icon" className="transition-all transform hover:scale-110 hover:text-primary hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
               <Link href="https://github.com/Thenakan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-6 w-6" />
               </Link>
             </Button>
-            <Button asChild variant="ghost" size="icon">
+            <Button asChild variant="ghost" size="icon" className="transition-all transform hover:scale-110 hover:text-primary hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
               <Link
                 href="https://www.linkedin.com/in/thenakan-sornalinkam-905471324/"
                 target="_blank"
@@ -65,19 +64,19 @@ const Hero = () => {
               </Link>
             </Button>
 
-            <Button asChild variant="ghost" size="icon">
+            <Button asChild variant="ghost" size="icon" className="transition-all transform hover:scale-110 hover:text-primary hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
               <Link href="https://www.instagram.com/the_nu14/profilecard/?igsh=MTcxNDcybTE0ODVtbQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="h-6 w-6" />
               </Link>
             </Button>
 
-            <Button asChild variant="ghost" size="icon">
+            <Button asChild variant="ghost" size="icon" className="transition-all transform hover:scale-110 hover:text-primary hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
               <Link href="https://www.facebook.com/Thenakan14?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <Facebook className="h-6 w-6" />
               </Link>
             </Button>
 
-            <Button asChild variant="ghost" size="icon">
+            <Button asChild variant="ghost" size="icon" className="transition-all transform hover:scale-110 hover:text-primary hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
               <Link
                 href="https://wa.me/+94772023472"
                 target="_blank"
@@ -87,10 +86,6 @@ const Hero = () => {
                 <FaWhatsapp className="h-6 w-6" />
               </Link>
             </Button>
-
-
-
-
           </div>
         </motion.div>
         <motion.div
