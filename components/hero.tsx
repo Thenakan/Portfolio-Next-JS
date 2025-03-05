@@ -38,7 +38,7 @@ const Hero = () => {
             </Button>
             <Button asChild variant="outline">
               <Link
-                href="https://drive.google.com/file/d/1QVAX7JYZoN69rfMBSgqJkGZUrQoTYz9E/view"
+                href="https://drive.google.com/file/d/1-K2DHBEMZYYxY2BBXQqfk5IcfEr_7pej/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >

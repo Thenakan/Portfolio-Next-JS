@@ -58,7 +58,7 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild className="bg-primary hover:bg-primary/90">
                 <Link
-                  href="https://drive.google.com/file/d/1QVAX7JYZoN69rfMBSgqJkGZUrQoTYz9E/view"
+                  href="https://drive.google.com/file/d/1-K2DHBEMZYYxY2BBXQqfk5IcfEr_7pej/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

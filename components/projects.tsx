@@ -31,7 +31,16 @@ const sampleProjects = [
     image: "/portfolio.png?height=300&width=500",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     githubUrl: "https://github.com/Thenakan",
-    liveUrl: "#",
+    liveUrl: "https://portfolio-next-js-five-cyan.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Coffee Website",
+    description: "Make your day great with our special coffee",
+    image: "/coffee.png?height=300&width=500",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/Thenakan",
+    liveUrl: "https://portfolio-next-js-five-cyan.vercel.app/",
   },
 ]
 
