@@ -1,10 +1,12 @@
 "use client"
 
-import { ArrowDown, Github, Linkedin } from "lucide-react"
+import { ArrowDown, Facebook, Github, Instagram, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import TypedText from "./typed" // TypedText component import
+import { FaWhatsapp } from 'react-icons/fa';
+
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -49,7 +51,7 @@ const Hero = () => {
           <div className="flex gap-4 mt-8 justify-center md:justify-start">
             <Button asChild variant="ghost" size="icon">
               <Link href="https://github.com/Thenakan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github className="h-5 w-5" />
+                <Github className="h-6 w-6" />
               </Link>
             </Button>
             <Button asChild variant="ghost" size="icon">
@@ -59,9 +61,36 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-6 w-6" />
               </Link>
             </Button>
+
+            <Button asChild variant="ghost" size="icon">
+              <Link href="https://www.instagram.com/the_nu14/profilecard/?igsh=MTcxNDcybTE0ODVtbQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Instagram className="h-6 w-6" />
+              </Link>
+            </Button>
+
+            <Button asChild variant="ghost" size="icon">
+              <Link href="https://www.facebook.com/Thenakan14?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <Facebook className="h-6 w-6" />
+              </Link>
+            </Button>
+
+            <Button asChild variant="ghost" size="icon">
+              <Link
+                href="https://wa.me/+94772023472"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp className="h-6 w-6" />
+              </Link>
+            </Button>
+
+
+
+
           </div>
         </motion.div>
         <motion.div
