@@ -1,27 +1,70 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Server, Figma, Cloud } from "lucide-react"
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaAws, FaDocker, FaGithub } from "react-icons/fa"
+import { SiTypescript, SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si"
+import { BiServer } from "react-icons/bi"
+import { FiFigma } from "react-icons/fi"
+import { DiGithubAlt } from "react-icons/di"
 
 const skillCategories = [
   {
     title: "Frontend",
-    icon: <Code className="h-8 w-8 mb-4 text-blue-600 dark:text-blue-400" />,
+    icon: (
+      <FaReact 
+        className="h-8 w-8 mb-4" 
+        style={{
+          animation: "glow 1.5s ease-in-out infinite",
+          background: "none",
+          color: "#61DAFB", // React Icon Color (light blue)
+        }} 
+      />
+    ),
     skills: ["Next.js", "React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
   },
+  
   {
     title: "Backend",
-    icon: <Server className="h-8 w-8 mb-4 text-blue-600 dark:text-blue-400" />,
+    icon: (
+      <FaNodeJs 
+        className="h-8 w-8 mb-4" 
+        style={{
+          animation: "glow 1.5s ease-in-out infinite",
+          background: "none",
+          color: "#68A063", // Node.js Icon Color (green)
+        }} 
+      />
+    ),
     skills: ["Node.js", "Express", "MongoDB", "REST API"],
   },
+  
   {
     title: "DevOps & Tools",
-    icon: <Cloud className="h-8 w-8 mb-4 text-blue-600 dark:text-blue-400" />,
+    icon: (
+      <FaAws 
+        className="h-8 w-8 mb-4" 
+        style={{
+          animation: "glow 1.5s ease-in-out infinite",
+          background: "none",
+          color: "#FF9900", // AWS Icon Color (orange)
+        }} 
+      />
+    ),
     skills: ["AWS", "Docker", "Git", "GitHub", "CI/CD"],
   },
+  
   {
     title: "Design & Others",
-    icon: <Figma className="h-8 w-8 mb-4 text-blue-600 dark:text-blue-400" />,
+    icon: (
+      <FiFigma 
+        className="h-8 w-8 mb-4" 
+        style={{
+          animation: "glow 1.5s ease-in-out infinite",
+          background: "none",
+          color: "#F24E1E", // Figma Icon Color (orange-red)
+        }} 
+      />
+    ),
     skills: ["Figma", "Canva", "Google Docs", "Google Sheets", "Google Forms"],
   },
 ]
@@ -99,3 +142,24 @@ const Skills = () => {
 
 export default Skills
 
+// CSS (Updated Glow Effect)
+const glowEffect = `
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+    }
+    50% {
+      box-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
+    }
+    100% {
+      box-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+    }
+  }
+`
+
+// Injecting the CSS rule into the document
+if (typeof document !== "undefined") {
+  const styleTag = document.createElement('style')
+  styleTag.innerHTML = glowEffect
+  document.head.appendChild(styleTag)
+}
