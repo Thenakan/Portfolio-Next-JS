@@ -31,7 +31,7 @@ const sampleProjects = [
     image: "/portfolio.png?height=300&width=500",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     githubUrl: "https://github.com/Thenakan",
-    liveUrl: "https://portfolio-next-js-oio3.vercel.app/",
+    liveUrl: "https://portfolio-two-tau-67.vercel.app/",
   },
   {
     id: 4,
