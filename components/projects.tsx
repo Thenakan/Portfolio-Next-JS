@@ -31,7 +31,7 @@ const sampleProjects = [
     image: "/portfolio.png?height=300&width=500",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     githubUrl: "https://github.com/Thenakan",
-    liveUrl: "https://portfolio-next-js-five-cyan.vercel.app/",
+    liveUrl: "https://portfolio-next-js-oio3.vercel.app/",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const sampleProjects = [
     image: "/coffee.png?height=300&width=500",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     githubUrl: "https://github.com/Thenakan",
-    liveUrl: "https://portfolio-next-js-five-cyan.vercel.app/",
+    liveUrl: "https://thenakan.github.io/Assignment07_Thenakan/",
   },
 ]
 
