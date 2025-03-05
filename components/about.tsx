@@ -66,7 +66,8 @@ const About = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="#contact">Contact Me</Link>
+                <Link href="https://wa.me/94772023472?text=Hey%20Whats%20Up%21
+">Contact Me</Link>
               </Button>
             </div>
           </motion.div>
