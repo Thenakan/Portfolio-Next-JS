@@ -20,7 +20,7 @@ const sampleProjects = [
     title: "Plantex",
     description: "A collaborative task management application with real-time updates using Socket.io.",
     image: "/plantex.png?height=300&width=500",
-    tags: ["React", "Node.js", "Socket.io", "Express"],
+    tags: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/Thenakan",
     liveUrl: "https://thenakan.github.io/Assignment-9/",
   },
@@ -38,12 +38,12 @@ const sampleProjects = [
     title: "Coffee Website",
     description: "Make your day great with our special coffee",
     image: "/coffee.png?height=300&width=500",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    tags: ["HTML", "CSS"],
     githubUrl: "https://github.com/Thenakan",
     liveUrl: "https://thenakan.github.io/Assignment07_Thenakan/",
   },
 ]
-
+ 
 const Projects = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
