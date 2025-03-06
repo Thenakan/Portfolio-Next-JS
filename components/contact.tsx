@@ -1,44 +1,49 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Send, Mail, Phone, MapPin } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { useToast } from "@/components/ui/use-toast"
+import type React from "react";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Send, Mail, Phone, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { toast } from "react-toastify"; // Import Toastify
 
 const Contact = () => {
-  const { toast } = useToast()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
+    setIsSubmitting(true);
 
-    // In a real implementation, you would use EmailJS here
-    // This is a mock implementation
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      })
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Something went wrong");
+      }
+
+      // Success toast message
+      toast.success("Thank you for your message. I'll get back to you soon.");
 
       // Reset form
       setFormData({
@@ -46,17 +51,14 @@ const Contact = () => {
         email: "",
         subject: "",
         message: "",
-      })
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "There was an error sending your message. Please try again.",
-        variant: "destructive",
-      })
+      });
+    } catch (error: any) {
+      // Error toast message
+      toast.error(error.message || "There was an error sending your message. Please try again.");
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
-  }
+  };
 
   return (
     <section id="contact" className="py-20">
@@ -113,20 +115,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-lg">Social Profiles</h4>
                   <div className="flex gap-4 mt-2">
-                    <a
-                      href="https://github.com/Thenakan"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 dark:text-gray-300 hover:text-primary"
-                    >
+                    <a href="https://github.com/Thenakan" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-300 hover:text-primary">
                       GitHub
                     </a>
-                    <a
-                      href="https://www.linkedin.com/in/thenakan-sornalinkam-905471324/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 dark:text-gray-300 hover:text-primary"
-                    >
+                    <a href="https://www.linkedin.com/in/thenakan-sornalinkam-905471324/" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-300 hover:text-primary">
                       LinkedIn
                     </a>
                   </div>
@@ -203,8 +195,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
-
+export default Contact;
