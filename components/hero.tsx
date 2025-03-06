@@ -38,14 +38,14 @@ const Hero = () => {
               <Link href="#contact">Get in Touch</Link>
             </Button>
             <Button asChild variant="outline" className="transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
-              <Link
-                href="https://drive.google.com/file/d/1-K2DHBEMZYYxY2BBXQqfk5IcfEr_7pej/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download CV
-              </Link>
-            </Button>
+  <Link
+    href="https://drive.google.com/uc?export=download&id=1Uy5yPzyg9WqDkwkEaLVFLOTMZOMtK5uC"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Download CV
+  </Link>
+</Button>
           </div>
           <div className="flex gap-4 mt-8 justify-center md:justify-start">
             <Button asChild variant="ghost" size="icon" className="transition-all transform hover:scale-110 hover:text-primary hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
