@@ -38,10 +38,12 @@ const Hero = () => {
               <Link href="#contact">Get in Touch</Link>
             </Button>
             <Button asChild variant="outline" className="transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
+            
   <Link
-    href="https://drive.google.com/uc?export=download&id=1Uy5yPzyg9WqDkwkEaLVFLOTMZOMtK5uC"
+    href="https://drive.google.com/uc?export=download&id=1WsA8-7-oR8dYIauYY0EbC8vcuzaV5nTa"
     target="_blank"
     rel="noopener noreferrer"
+    download="Thenakan"  // Replace with the desired name for the downloaded file
   >
     Download CV
   </Link>
