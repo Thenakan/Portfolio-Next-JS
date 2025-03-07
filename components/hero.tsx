@@ -43,12 +43,12 @@ const Hero = () => {
   className="transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]"
 >
   <a
-    href="https://drive.google.com/uc?export=download&id=1UiYsp4w67mI3WmHE4zdLSAOhoo3fBUmM"
-    download="Thenakan_CV.pdf" // The file name for the downloaded file
+    href="https://drive.google.com/uc?export=download&id=1rFAwwCIPF0IczRJClq4gJWTaJHnb1Jca"
   >
     Download CV
   </a>
 </Button>
+
 
           </div>
           <div className="flex gap-4 mt-8 justify-center md:justify-start">
