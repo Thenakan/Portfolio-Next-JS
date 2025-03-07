@@ -37,17 +37,19 @@ const Hero = () => {
             <Button asChild className="bg-primary hover:bg-primary/90 transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
               <Link href="#contact">Get in Touch</Link>
             </Button>
-            <Button asChild variant="outline" className="transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
-            
-  <Link
-    href="https://drive.google.com/uc?export=download&id=1WsA8-7-oR8dYIauYY0EbC8vcuzaV5nTa"
-    target="_blank"
-    rel="noopener noreferrer"
-    download="Thenakan"  // Replace with the desired name for the downloaded file
+            <Button
+  asChild
+  variant="outline"
+  className="transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]"
+>
+  <a
+    href="https://drive.google.com/uc?export=download&id=1UiYsp4w67mI3WmHE4zdLSAOhoo3fBUmM"
+    download="Thenakan_CV.pdf" // The file name for the downloaded file
   >
     Download CV
-  </Link>
+  </a>
 </Button>
+
           </div>
           <div className="flex gap-4 mt-8 justify-center md:justify-start">
             <Button asChild variant="ghost" size="icon" className="transition-all transform hover:scale-110 hover:text-primary hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]">
