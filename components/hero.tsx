@@ -43,7 +43,7 @@ const Hero = () => {
   className="transition-all transform hover:scale-105 hover:shadow-[0_0_30px_8px_rgba(0,123,255,1)]"
 >
   <a
-    href="https://drive.google.com/uc?export=download&id=1rFAwwCIPF0IczRJClq4gJWTaJHnb1Jca"
+    href="https://drive.google.com/file/d/1Ix_AY21hMB3Pv8J_1tHFVDfKAg6Ca0n8/view?usp=drive_link"
   >
     Download CV
   </a>
